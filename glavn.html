@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+	<title>ГДЗ</title>
+	<link href="bX.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="js/skyript.js"></script>
+	<meta charset='UTF-8'>
+	</head>
+	<body>
+	
+			<div id="page-preloader" class="preloader">
+				<div class="loader"></div>
+			</div>
+			
+	
+	
+	<div id="header2">
+	
+	</div>
+	
+	<div id="header3">
+						<div class="example">
+					<ul id="nav">
+						<li class="current"><a href="https://pcvector.net">Главная</a></li>
+						<li><a href="https://pcvector.net">Статьи</a>
+							<ul id="indexser">
+								<li><a href="https://pcvector.net">HTML / CSS</a></li>
+								<li><a href="https://pcvector.net">JS / jQuery</a>
+									<ul>
+										<li><a href="https://pcvector.net">jQuery</a></li>
+										<li><a href="https://pcvector.net">JS</a></li>
+									</ul>
+								</li>
+								<li><a href="https://pcvector.net">PHP</a></li>
+								<li><a href="https://pcvector.net">MySQL</a></li>
+								<li><a href="https://pcvector.net">XSLT</a></li>
+								<li><a href="https://pcvector.net">Ajax</a></li>
+							</ul>
+						</li>
+						<li><a href="https://pcvector.net">Ресурсы</a>
+							<ul>
+								<li><a href="https://pcvector.net">Категория</a>
+									<ul id="indexser">
+										<li><a href="https://pcvector.net">PHP</a></li>
+										<li><a href="https://pcvector.net">MySQL</a></li>
+										<li><a href="https://pcvector.net">XSLT</a></li>
+										<li><a href="https://pcvector.net">Ajax</a></li>
+									</ul>
+								</li>
+								<li><a href="https://pcvector.net">Теги</a>
+									<ul id="indexser">
+										<li><a href="https://pcvector.net">капча</a></li>
+										<li><a href="https://pcvector.net">галерея</a></li>
+										<li><a href="https://pcvector.net">анимация</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li><a href="https://pcvector.net">О нас</a></li>
+					</ul>
+				</div>
+	</div>
+	
+		<div class="wrapper">
+		
+		</div>
+		
+		
+	
+		<div id="miDdle12">
+		
+				<div id="sidebar1">
+				</div>
+				
+				<div id="khy">
+				
+				<div class="reflection"></div>
+				
+				
+				
+				</div>
+				
+				<div id="sidebar4">
+				</div>
+				
+				<div id="piXi">
+				<script src="pixi.min.js"></script>
+					<script>
+						let app = new PIXI.Application({width: window.innerWidth, height: window.innerHeight});
+						document.body.appendChild(app.view);
+						
+						let img = new PIXI.Sprite.from("d3b7a2ba76d6ff090437ab31bbfdd90f.jpg");
+						img.width = window.innerWidth;
+						img.height = window.innerHeight;
+						app.stage.addChild(img);
+						
+						depthMap = new PIXI.Sprite.from("map-d3b7a2ba76d6ff090437ab31bbfdd90f.jpg");
+						app.stage.addChild(depthMap);
+						
+						displacementFilter = new PIXI.filters.DisplacementFilter(depthMap);
+						app.stage.filters = [displacementFilter];
+				
+						window.onmousemove = function(e) {
+						displacementFilter.scale.x = (window.innerWidth / 2 - e.clientX) /18;
+						displacementFilter.scale.y = (window.innerHeight / 2 - e.clientY) /18;
+						
+						
+					};
+					</script>
+				</div>
+			
+		</div>
+	</body>
+</html>
